@@ -35,6 +35,7 @@ body {
 }
 
 .form {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,4 +95,28 @@ body {
     font-size: 16px;
     font-weight: 600;
     color: #FCFCFD;
+    cursor: pointer;
 }
+
+.form #info-widget {
+    position: absolute;
+    top: 0;
+  }
+
+  .info {
+    width: max-content;
+    height: max-content;
+    padding: 10px;
+    color: #FFFFFF;
+    display: none;
+  }
+
+  .show-positive-info {
+    display: block;
+    background-color:  #30b316;
+  }
+
+  .show-negative-info {
+    display: block;
+    background-color:  #f12a2a;
+  }
